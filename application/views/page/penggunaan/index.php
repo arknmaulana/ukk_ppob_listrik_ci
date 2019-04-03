@@ -21,7 +21,7 @@
                   			<td><?=$data->alamat?></td>        					         				
 	         				<td>                    
 	         					<button style="float: left;margin-right: 1%" data-toggle="modal" data-target="#modal-add" class="btn btn-info" onclick="add_penggunaan('<?=$data->id_user?>')"><span class="fa fa-plus"></span></button>
-	         					<form action="<?=base_url('index.php/penggunaan/detail')?>" method="get">
+	         					<form action="<?=base_url('penggunaan/detail')?>" method="get">
 	         						<input type="hidden" name="id_user" value="<?=$data->id_user?>">
 	         						<button type="submit" class="btn btn-primary"><span class="fa fa-eye"></span></button>
 	         					<?=form_close()?>
@@ -44,7 +44,7 @@
                 <h4 class="modal-title">Modal Tambah Penggunaan</h4>
             </div>
             <div class="modal-body">
-                <?=form_open(base_url('index.php/penggunaan/validate'),array('id'=>'form'))?>
+                <?=form_open(base_url('penggunaan/validate'),array('id'=>'form'))?>
               <div class="box-body">
                 <div class="form-group">
                   <label>Meteran Awal</label>

@@ -20,7 +20,7 @@ class Tarif extends CI_Controller {
 		$data['header_small'] = 'Tarif';
 		$this->load->library('pagination');
 		
-		$config['base_url'] = base_url().'index.php/pelanggan/index';
+		$config['base_url'] = base_url().'pelanggan/index';
 		$config['total_rows'] = $this->tarif->getCount();
 		$config['per_page'] =4;
 		$config['uri_segment'] = 3;

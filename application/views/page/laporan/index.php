@@ -5,7 +5,7 @@
 	<div class="col-md-6">
 		<div class="box">
 			<div class="box-body">
-				<!-- <?=form_open(base_url('index.php/laporan/detail'))?> -->
+				<!-- <?=form_open(base_url('laporan/detail'))?> -->
 				<div class="form-group">
 					<label>Jenis Laporan</label>
 					<select name="jenis_laporan" class="form-control" id="jenis_laporan"> 
@@ -15,7 +15,7 @@
 					</select>
 				</div>
 				<div class="form-group">
-					<a href="<?=base_url('index.php/laporan/detail')?>" type="submit" class="btn btn-primary">Submit</a>
+					<a href="<?=base_url('laporan/detail')?>" type="submit" class="btn btn-primary">Submit</a>
 				</div>
 				<!-- <?=form_close()?> -->
 			</div>

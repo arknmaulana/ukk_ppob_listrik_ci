@@ -67,7 +67,7 @@
                     <a href="#" class="btn btn-default btn-flat">Change Password</a>
                   </div>
                   <div class="pull-right">
-                    <a href="<?=base_url('index.php/auth/logout')?>" class="btn btn-default btn-flat">Logout</a>
+                    <a href="<?=base_url('auth/logout')?>" class="btn btn-default btn-flat">Logout</a>
                   </div>
                 </li>
               </ul>
@@ -276,7 +276,7 @@
                 <h4 class="modal-title">Modal Upload</h4>
             </div>
             <div class="modal-body">
-              <?=form_open(base_url('index.php/home/validate'),array('id'=>'form-upload'))?>
+              <?=form_open(base_url('home/validate'),array('id'=>'form-upload'))?>
               <div class="box-body">
                 <div class="form-group">
                   <label>Tanggal Bayar</label>

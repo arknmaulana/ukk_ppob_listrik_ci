@@ -9,7 +9,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <?=form_open(base_url('index.php/admin/validate'),array('id'=>'form'))?>
+            <?=form_open(base_url('admin/validate'),array('id'=>'form'))?>
               <div class="box-body">
               	<div class="form-group">
                   <label>Nama</label>
@@ -68,7 +68,7 @@
 	         				<td>
 	         					<button style="float: left;margin-right: 1%" data-toggle="modal" data-target="#modal-edit" class="btn btn-primary" onclick="
 	         					edit('<?=$data->id_user?>','<?=$data->nama?>','<?=$data->username?>','<?=$data->password?>','<?=$data->level?>')"><span class="fa fa-edit"></span></button>
-	         					<?=form_open(base_url('index.php/admin/delete'),'')?>
+	         					<?=form_open(base_url('admin/delete'),'')?>
 	         					<input type="hidden" name="id_user" value="<?=$data->id_user?>">
 	         					<button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ?')"><span class="fa fa-trash"></span></button>
 	         					<?=form_close()?>
@@ -91,7 +91,7 @@
                 <h4 class="modal-title">Modal Edit</h4>
             </div>
             <div class="modal-body">
-                <?=form_open(base_url('index.php/admin/validate'),array('id'=>'form-edit'))?>
+                <?=form_open(base_url('admin/validate'),array('id'=>'form-edit'))?>
               <div class="box-body">
               	<div class="form-group">
                   <label>Nama</label>
@@ -135,7 +135,7 @@
                 <h4 class="modal-title">Modal Edit Status</h4>
             </div>
             <div class="modal-body">
-              <?=form_open(base_url('index.php/admin/validate'))?>
+              <?=form_open(base_url('admin/validate'))?>
               <div class="box-body">              
                 <div class="form-group">
                   <label>Status</label>

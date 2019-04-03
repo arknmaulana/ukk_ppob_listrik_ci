@@ -9,7 +9,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <?=form_open(base_url('index.php/tarif/validate'),array('id'=>'form'))?>
+            <?=form_open(base_url('tarif/validate'),array('id'=>'form'))?>
               <div class="box-body">
                 <div class="form-group">
                   <label>Daya</label>
@@ -49,7 +49,7 @@
 	         				<td>
 	         					<button style="float: left;margin-right: 1%" data-toggle="modal" data-target="#modal-edit" class="btn btn-primary" onclick="
 	         					edit('<?=$data->id_tarif?>','<?=$data->daya?>','<?=$data->perkwh?>')"><span class="fa fa-edit"></span></button>
-	         					<?=form_open(base_url('index.php/tarif/delete'),'')?>
+	         					<?=form_open(base_url('tarif/delete'),'')?>
 	         					<input type="hidden" name="id_tarif" value="<?=$data->id_tarif?>">
 	         					<button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ?')"><span class="fa fa-trash"></span></button>
 	         					<?=form_close()?>
@@ -72,7 +72,7 @@
                 <h4 class="modal-title">Modal Edit</h4>
             </div>
             <div class="modal-body">
-                <?=form_open(base_url('index.php/tarif/validate'),array('id'=>'form-edit'))?>
+                <?=form_open(base_url('tarif/validate'),array('id'=>'form-edit'))?>
 	              <div class="box-body">
 	                <div class="form-group">
 	                  <label>Daya</label>

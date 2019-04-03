@@ -21,7 +21,7 @@ class Penggunaan extends CI_Controller {
 		$data['header_small'] = 'Penggunaan';
 		$this->load->library('pagination');
 		
-		$config['base_url'] = base_url().'index.php/penggunaan/index';
+		$config['base_url'] = base_url().'penggunaan/index';
 		$config['total_rows'] = $this->user->getCountPelanggan();
 		$config['per_page'] =3;
 		$config['uri_segment'] = 3;

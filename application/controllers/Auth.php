@@ -55,7 +55,7 @@ class Auth extends CI_Controller {
 					'status' => 0,
 				);
 				$this->user->add($object);
-				$data['redirect'] = 'index.php/auth';				
+				$data['redirect'] = 'auth';				
 			}else{
 				$username = $this->input->post('username');
 				$password = $this->input->post('password');

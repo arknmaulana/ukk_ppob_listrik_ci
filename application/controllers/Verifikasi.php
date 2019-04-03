@@ -19,7 +19,7 @@ class Verifikasi extends CI_Controller {
 		$data['header_small'] = 'Verifikasi';
 		$this->load->library('pagination');
 		
-		$config['base_url'] = base_url().'index.php/verifikasi/index';
+		$config['base_url'] = base_url().'verifikasi/index';
 		$config['total_rows'] = $this->guna->getCountVerifikasi();
 		$config['per_page'] =3;
 		$config['uri_segment'] = 3;

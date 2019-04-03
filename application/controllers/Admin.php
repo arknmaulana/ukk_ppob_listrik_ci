@@ -21,7 +21,7 @@ class Admin extends CI_Controller {
 		$data['header_small'] = 'Admin';
 		$this->load->library('pagination');
 		
-		$config['base_url'] = base_url().'index.php/admin/index';
+		$config['base_url'] = base_url().'admin/index';
 		$config['total_rows'] = $this->user->getCountAdmin();
 		$config['per_page'] =3;
 		$config['uri_segment'] = 3;

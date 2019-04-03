@@ -45,7 +45,7 @@
             </div>
             <div class="modal-body">
             	<img src="" id="gambar">
-               	<?=form_open(base_url('index.php/verifikasi/validate'),array('id'=>'form'))?>
+               	<?=form_open(base_url('verifikasi/validate'),array('id'=>'form'))?>
 	              <div class="box-body">
 	                <div class="form-group">
 	                  <label>Status</label>

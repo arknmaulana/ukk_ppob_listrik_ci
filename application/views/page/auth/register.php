@@ -36,7 +36,7 @@
     <div class="login-box-body">
       <p class="login-box-msg">Pendaftaran User</p>
 
-      <?=form_open(base_url('index.php/auth/validate'),array('id'=>'form'))?>
+      <?=form_open(base_url('auth/validate'),array('id'=>'form'))?>
       <div class="box-body">
         <div class="form-group">
           <label>Nama</label>
@@ -80,7 +80,7 @@
         <!-- /.col -->
         <div class="col-md-12">
           <button type="submit" class="btn btn-primary btn-block btn-flat">Daftar</button>
-          <a href="<?=base_url('index.php/auth')?>" class="btn btn-info btn-block btn-flat">Login</a>
+          <a href="<?=base_url('auth')?>" class="btn btn-info btn-block btn-flat">Login</a>
         </div>      
         <!-- /.col -->
       </div>

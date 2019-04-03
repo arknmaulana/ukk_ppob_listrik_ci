@@ -22,7 +22,7 @@ class Pelanggan extends CI_Controller {
 		$data['header_small'] = 'Pelanggan';
 		$this->load->library('pagination');
 		
-		$config['base_url'] = base_url().'index.php/pelanggan/index';
+		$config['base_url'] = base_url().'pelanggan/index';
 		$config['total_rows'] = $this->user->getCountPelanggan();
 		$config['per_page'] =3;
 		$config['uri_segment'] = 3;

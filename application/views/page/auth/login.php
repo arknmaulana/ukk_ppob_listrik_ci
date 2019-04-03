@@ -36,7 +36,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">Silahkan Login terlebih dahulu</p>
 
-    <?=form_open(base_url('index.php/auth/validate'), array('id'=>'form'));?>
+    <?=form_open(base_url('auth/validate'), array('id'=>'form'));?>
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Username" name="username" id="username">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -52,7 +52,7 @@
         <!-- /.col -->
         <div class="col-md-12">
           <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-          <a href="<?=base_url('index.php/auth/register')?>" class="btn btn-info btn-block btn-flat">Daftar</a>
+          <a href="<?=base_url('auth/register')?>" class="btn btn-info btn-block btn-flat">Daftar</a>
         </div>      
         <!-- /.col -->
       </div>
